@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  color: #ffffff;
+  background-color: #212121;
+  font-weight: 400;
+  /* font-family: "Noto Sans TC", serif; */
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20.72px;
+  height: fit-content;
+}
+
+@media screen and (min-width: 1024px) {
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    height: fit-content;
+    line-height: 23.68px;
+  }
+}
+
+label {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:active,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:active {
+  transition:
+  background-color 600000s 0s,
+  color 600000s 0s;
+}
+
+/* 移除向下箭頭 */
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url("./assets/selectArrow.svg") no-repeat right 10px center;
+}
+
+/* 清除外框線 */
+input,
+textarea,
+select {
+  outline: none;
+}
+
+span,
+p {
+  width: fit-content;
+  height: fit-content;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.border-primary {
+  border: 1px solid #00FF62;
+}
+
+.outlined-text {
+  color: transparent; 
+  -webkit-text-stroke-width: 2px; 
+  -webkit-text-stroke-color: #00FF62; 
+}
