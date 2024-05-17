@@ -29,28 +29,28 @@ const SideMenu: React.FC<SideMenuProps> = ({ menu, setMenu }) => {
                 </button>
               </li>
             );
-          } else {
-            return (
-              <li
-                value={`menu${item.id}`}
-                className=" text-green-500"
-                key={item.id}
-              >
-                <button
-                  type="button"
-                  className="flex justify-between items-center text-start"
-                  onClick={() => setMenu(item.id)}
-                >
-                  {item.title}{" "}
-                  <img
-                    src={menuArrow}
-                    alt="menuArrow"
-                    className="animate-bounce w-14 h-4"
-                  />
-                </button>
-              </li>
-            );
           }
+          
+          return (
+            <li
+              value={`menu${item.id}`}
+              className=" text-green-500"
+              key={item.id}
+            >
+              <button
+                type="button"
+                className="flex justify-between items-center text-start"
+                onClick={() => setMenu(item.id)}
+              >
+                {item.title}{" "}
+                <img
+                  src={menuArrow}
+                  alt="menuArrow"
+                  className="animate-bounce w-14 h-4"
+                />
+              </button>
+            </li>
+          );
         })}
       </ul>
     </div>
