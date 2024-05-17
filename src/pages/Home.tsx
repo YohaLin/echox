@@ -21,7 +21,7 @@ const Home = () => {
       </div>
 
       <div className="flex flex-col w-fit h-fit bg-transparent m-auto">
-        <p className="bg-transparent outlined-text text-[50px] font-extrabold">前端切版面試考題</p>
+        <p className="bg-transparent outlined-text text-[3.125rem] font-extrabold">前端切版面試考題</p>
       </div>
     </div>
   );

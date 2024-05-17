@@ -21,7 +21,7 @@ const CardButton: React.FC<CardButtonProps> = ({ buttonType }) => {
     >
       <span
         className={clsx("text-green-500", {
-          "text-[14px] leading-[20.72px] lg:text-md lg:leading-[23.68px]":
+          "text-[0.875rem] leading-[20.72px] lg:text-md lg:leading-[23.68px]":
             buttonType === Button.one,
           "text-md leading-[23.68px]": buttonType === Button.two,
         })}

@@ -11,7 +11,7 @@ interface DropdownProps {
 const Dropdown: React.FC<DropdownProps> = ({ menu, setMenu }) => {
   return (
     <div className="flex flex-col gap-[10px]">
-      <label className="text-[18px] text-green-500" htmlFor="menu5">
+      <label className="text-[1.125rem] text-green-500" htmlFor="menu5">
         側邊選單標題
       </label>
       <select

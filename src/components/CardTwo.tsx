@@ -17,7 +17,7 @@ const CardTwo: React.FC<CardTwoProps> = ({ style }) => {
     >
       {/* 三角形 */}
       <div className="absolute top-0 left-0 w-0 h-0 border-solid border-r-[100px] border-t-[100px] border-r-transparent border-t-green-500 bg-transparent"></div>
-      <p className="absolute top-8 left-2 text-gray-800 bg-transparent text-[12px] leading-[14.63px] -rotate-45">
+      <p className="absolute top-8 left-2 text-gray-800 bg-transparent text-[0.75rem] leading-[14.63px] -rotate-45">
         Tag Name
       </p>
 
@@ -26,10 +26,10 @@ const CardTwo: React.FC<CardTwoProps> = ({ style }) => {
         <p className="leading-[23.68px] font-bold line-clamp-2">
           超過兩行的文字的標題尾巴要顯示，超過兩行的 ...
         </p>
-        <p className="text-green-500 font-medium text-[14px] leading-[17.07px]">
+        <p className="text-green-500 font-medium text-[0.875rem] leading-[17.07px]">
           小標文字
         </p>
-        <p className="text-gray-500 font-medium text-[14px] leading-[17.07px]">
+        <p className="text-gray-500 font-medium text-[0.875rem] leading-[17.07px]">
           描述文字
         </p>
       </div>

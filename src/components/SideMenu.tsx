@@ -10,7 +10,7 @@ interface SideMenuProps {
 const SideMenu: React.FC<SideMenuProps> = ({ menu, setMenu }) => {
   return (
     <div className="flex flex-col gap-[10px] w-[170px] pb-[30px] border-b border-b-gray-700">
-      <p className="text-[18px] text-green-500">側邊選單標題</p>
+      <p className="text-[1.125rem] text-green-500">側邊選單標題</p>
       <ul className="flex flex-col gap-[5px] w-full pl-8 list-none">
         {menuList.map((item) => {
           if (item.id !== menu) {
